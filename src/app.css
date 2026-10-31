@@ -1,0 +1,64 @@
+:root {
+	--cream: #faf8f2;
+	--cream-deep: #f3efe4;
+	--line: #e7e1d3;
+	--ink: #1f2420;
+	--muted: #6c706a;
+	--faint: #b9b6ad;
+	--green: #3e5f3f;
+	--green-dark: #2f4a30;
+	--peach: #fcecdc;
+	--peach-line: #f1d2b2;
+	--gold: #c58a2c;
+
+	--font-serif: 'Source Serif 4', Georgia, serif;
+	--font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+	--radius: 12px;
+	color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background: var(--cream);
+	color: var(--ink);
+	font-family: var(--font-sans);
+	font-size: 14px;
+	line-height: 1.45;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: inherit;
+}
+
+button,
+input {
+	font: inherit;
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 2px solid var(--green);
+	outline-offset: 2px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
